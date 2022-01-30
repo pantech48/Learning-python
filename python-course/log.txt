@@ -1,0 +1,41 @@
+
+[2021****02****19 00****36******10] Function "__main__.f" called with:
+    -> positional arguments: (1, 5)
+    -> keyword arguments:    {}
+Returns: 6
+
+[2021****02****19 00****36******10] Function "__main__.f" called with:
+    -> positional arguments: ('a', 'b')
+    -> keyword arguments:    {}
+Returns: ab
+
+[2021 00****36******43] Function "__main__.f" called with:
+    -> positional arguments: (1, 5)
+    -> keyword arguments:    {}
+Returns: 6
+
+[2021 00****36******43] Function "__main__.f" called with:
+    -> positional arguments: ('a', 'b')
+    -> keyword arguments:    {}
+Returns: ab
+
+[ 00:37] Function "__main__.f" called with:
+    -> positional arguments: (1, 5)
+    -> keyword arguments:    {}
+Returns: 6
+
+[ 00:37] Function "__main__.f" called with:
+    -> positional arguments: ('a', 'b')
+    -> keyword arguments:    {}
+Returns: ab
+
+    [ 00:53] Function "__main__.f" called with:
+        -> positional arguments: (1, 5)
+        -> keyword arguments:    {}
+    Returns: 6
+    
+    [ 00:53] Function "__main__.f" called with:
+        -> positional arguments: ('a', 'b')
+        -> keyword arguments:    {}
+    Returns: ab
+    

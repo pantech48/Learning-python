@@ -1,0 +1,10 @@
+
+[2021-02-15 21:06:31] Function "__main__.f" called with:
+    -> positional arguments: (1, 5)
+    -> keyword arguments:    {}
+Returns: 6
+
+[2021-02-15 21:06:31] Function "__main__.f" called with:
+    -> positional arguments: ('a', 'b')
+    -> keyword arguments:    {}
+Returns: ab
