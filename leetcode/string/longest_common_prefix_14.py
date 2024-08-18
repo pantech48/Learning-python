@@ -15,29 +15,18 @@ def commonPrefix(first_str: str, second_str: str) -> str:
     return "".join(result)
 
 
-
 def longestCommonPrefix(strs: List[str]) -> str:
     if not strs:
         return ""
 
-    if len(strs) == 1:
-        return strs[0]
+    shortest = min(strs, key=len)
 
-    f_p = 1
-    s_p = 2
-    result = commonPrefix(strs[0], strs[1])
+    for index, char in enumerate(shortest):
+        for word in strs:
+            if word[index] != char:
+                return shortest[:index]
 
-    while s_p <= len(strs) - 1:
-        current_prefix = commonPrefix(strs[f_p], strs[s_p])
-        if not current_prefix:
-            return current_prefix
-
-        if len(current_prefix) <= len(result):
-            result = current_prefix
-
-        f_p += 1
-        s_p += 1
-    return result
+    return shortest
 
 
 test_cases = (
