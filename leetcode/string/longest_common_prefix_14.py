@@ -1,5 +1,5 @@
 from typing import List
-
+from itertools import takewhile
 def commonPrefix(first_str: str, second_str: str) -> str:
     result = []
     if not len(first_str):
@@ -20,6 +20,7 @@ def longestCommonPrefix(strs: List[str]) -> str:
         return ""
 
     shortest = min(strs, key=len)
+    print(list(zip(*strs)))
 
     for index, char in enumerate(shortest):
         for word in strs:
@@ -27,6 +28,11 @@ def longestCommonPrefix(strs: List[str]) -> str:
                 return shortest[:index]
 
     return shortest
+
+
+# beautifully pythonic solution
+def longestCommonPrefix2(strs: List[str]) -> str:
+    return "".join(x[0] for x in takewhile(lambda x: len(set(x)) == 1, zip(*strs)))
 
 
 test_cases = (
