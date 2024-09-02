@@ -1,7 +1,9 @@
+from collections import Counter
 
 # "loveleetcode"
 class Solution:
     def firstUniqChar(self, s: str) -> int:
+        print(Counter(s), )
         hash_map = {}
         for char in s:
             if char not in hash_map:
@@ -14,3 +16,6 @@ class Solution:
                 return idx
 
         return -1
+
+s = Solution()
+s.firstUniqChar('adsfsdsdg')
